@@ -1,0 +1,557 @@
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100%;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+/*all header*/
+header {
+    width: 100%;
+    min-height: 180px;
+    background-color: #ffffff;
+}
+
+/*first row in header*/
+.header-top-inner-information
+{
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 30px;
+}
+
+/*telephone number*/
+.header-top-inner-information .tel_number {
+    font-family: ProximaNovaBold;
+    font-weight: 700;
+    color: #1e1e1e;
+    display: block;
+    padding-top: 13px;
+    font-size: 14px;
+    padding-left: 30px;
+    float:left;
+}
+
+/*ПН-ПТ*/
+.header-top-inner-information .work-schedule {
+    font-size: 12px;
+    color: #ababab;
+    padding-top: 15px;
+    font-family: ProximaNovaBold;
+    padding-left: 22px;
+    font-weight: 400;
+    display: block;
+    float:left;
+}
+
+/*navigation menu in first row of header*/
+.header-top-inner-information nav {
+    float:left;
+    padding-left: 107px;
+}
+
+.header-top-inner-information nav ul li {
+    display: block;
+    float: left;
+    min-height: 100%;
+}
+
+.header-top-inner-information nav ul li a {
+    color: #9c9c9c;
+    font-size: 10px;
+    font-family: ProximaNovaBold;
+    font-weight: 400;
+    display: block;
+    padding: 0 16px;
+}
+
+.header-top-inner-information nav ul li a:hover {
+    color: black;
+}
+
+/*enter to the site*/
+.header-top-inner-information .sign_in {
+    font-family: ProximaNovaBold;
+    font-weight: 400;
+    color: #ababab;
+    display: block;
+    padding-top: 17px;
+    padding-left: 233px;
+    font-size: 10px;
+    float:left;
+}
+
+.header-top-inner-information .logo {
+    background: url(../images/basket.png) 0 0 no-repeat;
+    min-height: 16px;
+    width: 16px;
+    display: block;
+    margin-top: 14px;
+    padding-right: 7px;
+}
+
+.header-top-inner-information .quantity-of-elements-in-cart {
+    font-family: ProximaNovaBold;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1e1e1e;
+    padding-top: 16px;
+    padding-right: 30px;
+}
+
+/*end of first header information block*/
+
+/*second header information block*/
+
+.header-second-information-block {
+    width: 1280px;
+    margin: 0 auto;
+    max-height: 89px;
+}
+
+.header-second-information-block .LovelyShop {
+    background: url(../images/lovelyshops.png) 0 0 no-repeat;
+    height: 18px;
+    width: 221px;
+    display: block;
+    margin: 44px auto;
+}
+
+.line {
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 1px;
+    background-color: #f2f2f2;
+}
+
+/*header-third-information-block*/
+
+.header-third-information-block
+{
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 55px;
+}
+
+/*navigation menu in third row of header*/
+.header-third-information-block nav {
+    display: block;
+    text-align: center;
+}
+
+.header-third-information-block nav ul li {
+    display: inline-block;
+    float: left;
+    min-height: 100%;
+    margin-top: 2px;
+}
+
+.header-third-information-block nav ul li a {
+    color: #1e1e1e;
+    font-family: ProximaNovaBold;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    padding: 0 25px;
+
+}
+
+.header-third-information-block nav ul li a:hover, .search:hover {
+    color: #d2d2d2;
+}
+
+/*search in header*/
+.header-third-information-block .search {
+    background: url(../images/search.png) 0 0 no-repeat;
+    min-height: 16px;
+    width: 16px;
+    display: block;
+    margin-top: 3px;
+    padding-right: 48px;
+    cursor:pointer;
+}
+
+.search:hover {
+    color: #d2d2d2;
+}
+
+main {
+    width: 1280px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+/* slider */
+
+/*-----------------------------------------*/
+a img {
+    border: none;
+}
+
+.slider {
+    text-align: center;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+label, #active, img
+{
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+/* Slider Setup */
+
+input {
+    display: none;
+}
+
+/*inner-for-article вместо inner*/
+#slide1:checked ~ #slides .inner{ margin-left:0; }
+#slide2:checked ~ #slides .inner{ margin-left:-100%; }
+
+#overflow {
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+}
+
+/*article*/
+#slides .inner{
+    width: 500%;
+    line-height: 0;
+}
+
+#slides article {
+    width: 20%;
+    float: left;
+}
+
+.inner .kerastase
+{
+    position: absolute;
+    opacity: 1;
+    background: url('../images/kerastase.png') no-repeat;
+    width: 417px;
+    height: 58px;
+    cursor:pointer;
+    margin-top: 113px;
+    margin-left: 104px;
+}
+
+.inner .slider_line {
+    width: 43px;
+    margin-left: 104px;
+    margin-top: 200px;
+    min-height: 2px;
+    background-color: #1e1e1e;
+    position: absolute;
+}
+.inner .info
+{
+    width: 195px;
+    min-height: 34px;
+    position: absolute;
+    margin-top: 237px;
+    margin-left: 100px;
+    font-family: ProximaNovaBold;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: left;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+
+/*Подробнее*/
+.more_info_button {
+    width:109px;
+    height:109px;
+    display:block;
+    position: absolute;
+    float: right;
+    -moz-border-radius:109px;
+    -webkit-border-radius:109px;
+    -khtml-border-radius:109px;
+    font-size: 14px;
+    text-align:center;
+    line-height: 109px;
+    color: #c9a180;
+    font-family: ProximaNovaBold;
+    background-color: white;
+    margin: 370px 0 90px 1130px;
+}
+
+.more_info_button:hover {
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+.kerastase-images
+{
+    width: 223px;
+    min-height: 182px;
+    position: absolute;
+    margin: 290px 0 0 256px;
+    background: url('../images/Kerastase_products.png') no-repeat;
+}
+/* Control Setup */
+
+#controls {
+    margin: -24.5% 0 0 5px;
+    width: 100%;
+    height: 39px;
+}
+
+/* стиль стрелочек */
+#controls label {
+    display: none;
+    width: 39px;
+    height: 39px;
+}
+
+/* позиционирование переключателей */
+
+#active {
+    margin: 20% 0 0 0;
+    text-align: center;
+}
+
+/* стиль 5-ти переключателей внизу*/
+
+#active label{
+    background: url('../images/passive_switch.png') no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+/* стиль стрелочек */
+#controls label:hover {
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+/* правила переходов по слайдам */
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(1) {
+    float: right;
+    margin: 0 70px 0 0;
+    display: block;
+    z-index: 100;
+    background: url('../images/next_picture.png') no-repeat;
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2)
+{
+    background: url('../images/active_switch.png') no-repeat;
+}
+
+/* Slider Styling */
+
+#slides {
+    background: #fff;
+}
+
+/* Animation */
+
+#slides .inner {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+
+    -webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+
+.slider {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#controls label{
+    -webkit-transform: translateZ(0);
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+}
+
+#controls, #slides, #active, #active label {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+/* end slider*/
+
+/*Products under slider*/
+
+.products_under_slider {
+    min-height: 185px;
+    width: 1280px;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.top_brends, .beautiful_hears, .futures_for_mens {
+    display: flex;
+    width: 33.3%;
+}
+
+.top_brends {
+    background: url('../images/Under_slider_1.png') no-repeat;
+    background-size: cover; /* Современные браузеры */
+}
+
+.beautiful_hears {
+    background: url('../images/Under_slider_2.png') no-repeat;
+}
+
+.futures_for_mens {
+    background: url('../images/Under_slider_3.png') no-repeat;
+}
+
+/* first block under the slider*/
+.top_brends .arrow {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #c59a77;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 120px 0 0 39px;
+    background: #1f1f1f;
+}
+
+.top_brends p {
+    width: 108px;
+    min-height: 38px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #c59a77;
+    line-height: 25px;
+}
+
+.top_brends a {
+    text-align: center;
+    margin-top: 11px;
+    display: inline-block;
+    margin-left: 16px;
+}
+/* end first block under the slider */
+
+/* second block under the slider*/
+.beautiful_hears p {
+    width: 85px;
+    min-height: 37px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+
+.beautiful_hears .arrow_middle {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #1e1e1e;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 120px 0 0 39px;
+    background: #1e1e1e;
+}
+
+.beautiful_hears a {
+    text-align: center;
+    margin-top: 11px;
+    display: inline-block;
+    margin-left: 16px;
+}
+/* end second block under the slider*/
+
+/* third block under the slider*/
+.futures_for_mens p {
+    width: 104px;
+    min-height: 42px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.futures_for_mens a {
+    text-align: center;
+    margin-top: 11px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.futures_for_mens .arrow_third {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #bd9b7e;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 120px 0 0 39px;
+    background: #a27c5d;
+}
+
+.futures_for_mens .arrow_third:hover,
+.beautiful_hears .arrow_middle:hover,
+.top_brends .arrow:hover {
+    cursor:pointer;
+    opacity: 0.8;
+}
+/* end third block under the slider*/
+
