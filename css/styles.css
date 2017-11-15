@@ -419,7 +419,6 @@ article img {
 .products_under_slider {
     min-height: 185px;
     width: 1280px;
-    margin-top: 1px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -427,7 +426,7 @@ article img {
 
 .top_brends, .beautiful_hears, .futures_for_mens {
     display: flex;
-    width: 33.3%;
+    width: 33.333333%;
 }
 
 .top_brends {
@@ -471,7 +470,6 @@ article img {
 }
 
 .top_brends a {
-    text-align: center;
     margin-top: 11px;
     display: inline-block;
     margin-left: 16px;
@@ -506,7 +504,6 @@ article img {
 }
 
 .beautiful_hears a {
-    text-align: center;
     margin-top: 11px;
     display: inline-block;
     margin-left: 16px;
@@ -528,7 +525,6 @@ article img {
 }
 
 .futures_for_mens a {
-    text-align: center;
     margin-top: 11px;
     display: inline-block;
     margin-left: 16px;
@@ -555,3 +551,278 @@ article img {
 }
 /* end third block under the slider*/
 
+/*Central part of the site. Blocks with products*/
+
+.wrapper_blocks_with_products {
+    height: 898px;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.first_features, .second_features, .third_features {
+    display: flex;
+    height: 33.3%;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.cloud_nine_touch_first, .charge_up_thickening_shampoo_first, .the_activator_density_and_density_first,
+.cloud_nine_touch_second, .charge_up_thickening_shampoo_second, .the_activator_density_and_density_second,
+.cloud_nine_touch_third, .charge_up_thickening_shampoo_third, .the_activator_density_and_density_third {
+    display: flex;
+    width: 33.3%;
+}
+
+.charge_up_thickening_shampoo_second {
+    background-color: #f6f0eb;
+}
+
+.info_cloud_first, .info_cloud_second, .info_cloud_third, .beauty_style_info {
+    width: 108px;
+    min-height: 40px;
+    margin-top: 31px;
+    margin-left: 40px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+
+.charge_up_info_first, .charge_up_info_second, .charge_up_info_third {
+    width: 108px;
+    min-height: 64px;
+    margin-top: 31px;
+    margin-left: 40px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+.the_activator_info_first, .the_activator_info_second, .the_activator_info_third {
+    width: 138px;
+    min-height: 61px;
+    margin-top: 31px;
+    margin-left: 40px;
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+
+.touch_styler_first, .touch_styler_second, .touch_styler_third, .mask_beauty {
+    line-height: 12px;
+    font-size: 12px;
+    font-family: ProximaNovaBold;
+    height: 41px;
+    width: 118px;
+    color: #a1a1a1;
+    margin-top: 102px;
+    display: block;
+    position:absolute;
+    margin-left: 40px;
+}
+
+.shampoo_first, .shampoo_second, .shampoo_third {
+    line-height: 15px;
+    font-size: 12px;
+    font-family: ProximaNovaBold;
+    height: 43px;
+    width: 126px;
+    color: #a1a1a1;
+    margin-top: 122px;
+    display: block;
+    position:absolute;
+    margin-left: 40px;
+}
+
+.density_activator_first, .density_activator_second, .density_activator_third {
+    line-height: 15px;
+    font-size: 12px;
+    font-family: ProximaNovaBold;
+    height: 58px;
+    width: 119px;
+    color: #a1a1a1;
+    margin-top: 122px;
+    display: block;
+    position:absolute;
+    margin-left: 40px;
+}
+
+.price_beauty, .price_cloud_third, .price_cloud_second, .price_cloud_first,
+.price_shampoo_third, .price_shampoo_second, .price_shampoo_first,
+.price_density_third, .price_density_second, .price_density_first{
+    margin-top: 254px;
+    position:absolute;
+    margin-left: 40px;
+    font-size: 14px;
+    font-family: ProximaNovaBold;
+    height: 14px;
+    width: 92px;
+    color: #7f7f7f;
+    display: block;
+}
+
+/*blocks with orange basket*/
+.orange_basket_first, .orange_basket_second, .orange_basket_third,
+.orange_basket_shampoo_first, .orange_basket_shampoo_third
+ {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 230px 0 0 350px;
+    background: #ffffff;
+    box-shadow: 0px 3px 0px 0px #d6d6d6;
+}
+
+.white_basket_shampoo_second {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 230px 0 0 350px;
+    background: #c59a77;
+    box-shadow: 0px 3px 0px 0px #d6d6d6;
+}
+
+.orange_basket_beauty_style {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    margin: 250px 0 0 350px;
+    background: #ffffff;
+    box-shadow: 0px 3px 0px 0px #d6d6d6;
+}
+
+.orange_basket_first:hover, .orange_basket_second:hover, .orange_basket_third:hover,
+.orange_basket_beauty_style:hover, .orange_basket_shampoo_first:hover, .white_basket_shampoo_second:hover,
+.orange_basket_shampoo_third:hover{
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+.orange_basket_first a, .orange_basket_second a, .orange_basket_third a,
+.orange_basket_beauty_style a, .orange_basket_shampoo_first a, .orange_basket_shampoo_third a {
+    margin-top: 14px;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.white_basket_shampoo_second a {
+    margin-top: 12px;
+    display: inline-block;
+    margin-left: 13px;
+}
+/*end blocks with orange basket*/
+
+/*blocks with pictures*/
+.cloud_nine_picture_first {
+    width: 216px;
+    min-height: 144px;
+    position: absolute;
+    background: url('../images/cloud_nine_touch_first.png') no-repeat;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.cloud_nine_picture_second {
+    width: 71px;
+    min-height: 209px;
+    position: absolute;
+    background: url('../images/cloud_nine_second.png') no-repeat;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.cloud_nine_picture_third {
+    width: 190px;
+    min-height: 150px;
+    position: absolute;
+    background: url('../images/cloud_nine_third.png') no-repeat;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.beauty_style_picture {
+    width: 247px;
+    min-height: 178px;
+    position: absolute;
+    background: url('../images/beuty_style_picture.png') no-repeat;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.charge_up_picture_first {
+    width: 80px;
+    min-height: 213px;
+    position: absolute;
+    background: url('../images/kerastase_shampoo.png') no-repeat;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.shampoo_picture_second {
+    width: 234px;
+    min-height: 183px;
+    position: absolute;
+    background: url('../images/shampoo_second.png') no-repeat;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.shampoo_picture_third {
+    width: 235px;
+    min-height: 145px;
+    position: absolute;
+    background: url('../images/shampoo_third.png') no-repeat;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+/*end blocks with pictures*/
+
+/*end central part of the site. Blocks with products*/
+
+/*blocks with professional cosmetics and online store before footer*/
+
+.block_with_professional_cosmetics {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 300px;
+}
+
+.beauty_style, .online_store {
+    display: flex;
+}
+
+.beauty_style {
+    width:33.3%;
+}
+
+/* end blocks with professional cosmetics and online store before footer*/
+.online_store {
+    background: url('../images/girl_from_online_store.png') no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 66.7%;
+}
