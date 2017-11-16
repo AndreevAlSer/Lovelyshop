@@ -97,6 +97,10 @@ header {
     float:left;
 }
 
+.sign_in:hover {
+    color: black;
+}
+
 .header-top-inner-information .logo {
     background: url(../images/basket.png) 0 0 no-repeat;
     min-height: 16px;
@@ -127,7 +131,7 @@ header {
 
 .header-second-information-block .LovelyShop {
     background: url(../images/lovelyshops.png) 0 0 no-repeat;
-    height: 18px;
+    min-height: 18px;
     width: 221px;
     display: block;
     margin: 44px auto;
@@ -159,7 +163,7 @@ header {
     display: inline-block;
     float: left;
     min-height: 100%;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 
 .header-third-information-block nav ul li a {
@@ -172,24 +176,33 @@ header {
 
 }
 
-.header-third-information-block nav ul li a:hover, .search:hover {
+.header-third-information-block nav ul li a:hover{
     color: #d2d2d2;
 }
 
 /*search in header*/
-.header-third-information-block .search {
-    background: url(../images/search.png) 0 0 no-repeat;
-    min-height: 16px;
+.search {
     width: 16px;
-    display: block;
-    margin-top: 3px;
-    padding-right: 48px;
+    min-height: 16px;
+    border-radius: 16px;
+    margin-top: 10px;
     cursor:pointer;
+    margin-right: 48px;
 }
 
-.search:hover {
-    color: #d2d2d2;
+.search a {
+    display: block;
+    background: url("../images/search.png") no-repeat;
+    background-position: center center;
+    height: 16px;
+    width: 16px;
 }
+/*end search in header*/
+
+.search a:hover {
+    opacity: 0.7;
+}
+
 
 main {
     width: 1280px;
@@ -351,7 +364,8 @@ article img {
 
 /* правила переходов по слайдам */
 #slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(1) {
+#slide2:checked ~ #controls label:nth-child(1)
+{
     float: right;
     margin: 0 70px 0 0;
     display: block;
@@ -442,19 +456,95 @@ article img {
     background: url('../images/Under_slider_3.png') no-repeat;
 }
 
-/* first block under the slider*/
-.top_brends .arrow {
+/*arrows and hover under the slider*/
+
+.view_cosmetics_1:hover, .view_cosmetics_2:hover, .view_cosmetics_3:hover
+{
+    cursor:pointer;
+}
+
+.view_cosmetics_1:hover
+{
+    background: #c59a77;
+}
+
+.view_cosmetics_2:hover
+{
+    background: #1e1e1e;
+}
+
+.view_cosmetics_3:hover
+{
+    background: #ffffff;
+}
+
+.view_cosmetics_2:hover .arrow_2
+{
+    display: block;
+    background: url("../images/arrow_middle.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    background-position: center center;
+}
+
+.view_cosmetics_3:hover .arrow_3
+{
+    display: block;
+    background: url("../images/arrow_third.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    background-position: center center;
+}
+
+.view_cosmetics_1, .view_cosmetics_2, .view_cosmetics_3 {
     display: block;
     width: 39px;
     height: 39px;
-    border: 1px solid #c59a77;
     position: absolute;
     -moz-border-radius:39px;
     -webkit-border-radius:39px;
     -khtml-border-radius:39px;
     margin: 120px 0 0 39px;
-    background: #1f1f1f;
 }
+
+.view_cosmetics_1
+{
+    background: #1f1f1f;
+    border: 1px solid #352a23;
+}
+
+.view_cosmetics_2
+{
+    background: #c5ced7;
+    border: 1px solid #acbdcd;
+}
+
+.view_cosmetics_3
+{
+    background: #c7a284;
+    border: 1px solid #b48c6a;
+}
+
+.view_cosmetics_3 a {
+    display: block;
+    background: url("../images/arrow_middle.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    background-position: center center;
+}
+
+.view_cosmetics_1 a, .view_cosmetics_2 a, .view_cosmetics_3 a
+{
+    display: block;
+    background: url("../images/arrow.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    background-position: center center;
+}
+
+/*end arrows and hover under the slider*/
+
+/* first block under the slider*/
 
 .top_brends p {
     width: 108px;
@@ -469,11 +559,6 @@ article img {
     line-height: 25px;
 }
 
-.top_brends a {
-    margin-top: 11px;
-    display: inline-block;
-    margin-left: 16px;
-}
 /* end first block under the slider */
 
 /* second block under the slider*/
@@ -490,24 +575,6 @@ article img {
     line-height: 25px;
 }
 
-.beautiful_hears .arrow_middle {
-    display: block;
-    width: 39px;
-    height: 39px;
-    border: 1px solid #1e1e1e;
-    position: absolute;
-    -moz-border-radius:39px;
-    -webkit-border-radius:39px;
-    -khtml-border-radius:39px;
-    margin: 120px 0 0 39px;
-    background: #1e1e1e;
-}
-
-.beautiful_hears a {
-    margin-top: 11px;
-    display: inline-block;
-    margin-left: 16px;
-}
 /* end second block under the slider*/
 
 /* third block under the slider*/
@@ -524,31 +591,6 @@ article img {
     line-height: 25px;
 }
 
-.futures_for_mens a {
-    margin-top: 11px;
-    display: inline-block;
-    margin-left: 16px;
-}
-
-.futures_for_mens .arrow_third {
-    display: block;
-    width: 39px;
-    height: 39px;
-    border: 1px solid #bd9b7e;
-    position: absolute;
-    -moz-border-radius:39px;
-    -webkit-border-radius:39px;
-    -khtml-border-radius:39px;
-    margin: 120px 0 0 39px;
-    background: #a27c5d;
-}
-
-.futures_for_mens .arrow_third:hover,
-.beautiful_hears .arrow_middle:hover,
-.top_brends .arrow:hover {
-    cursor:pointer;
-    opacity: 0.8;
-}
 /* end third block under the slider*/
 
 /*Central part of the site. Blocks with products*/
@@ -570,43 +612,39 @@ article img {
     align-items: stretch;
 }
 
-.cloud_nine_touch_first, .charge_up_thickening_shampoo_first, .the_activator_density_and_density_first,
-.cloud_nine_touch_second, .charge_up_thickening_shampoo_second, .the_activator_density_and_density_second,
-.cloud_nine_touch_third, .charge_up_thickening_shampoo_third, .the_activator_density_and_density_third {
+.first_style {
     display: flex;
     width: 33.3%;
 }
 
-.charge_up_thickening_shampoo_second {
-    background-color: #f6f0eb;
+.beauty_style, .first_style {
+    border: 1px solid #e5e5e5;
 }
 
-.info_cloud_first, .info_cloud_second, .info_cloud_third, .beauty_style_info {
-    width: 108px;
-    min-height: 40px;
-    margin-top: 31px;
-    margin-left: 40px;
-    font-family: ProximaNovaBold;
-    font-size: 18px;
-    text-align: left;
-    font-weight: 400;
-    color: #1e1e1e;
-    line-height: 25px;
+/*hover block*/
+.first_style:hover,
+.beauty_style:hover
+{
+    cursor:pointer;
+    background: #f5efea;
 }
 
-.charge_up_info_first, .charge_up_info_second, .charge_up_info_third {
-    width: 108px;
-    min-height: 64px;
-    margin-top: 31px;
-    margin-left: 40px;
-    font-family: ProximaNovaBold;
-    font-size: 18px;
-    text-align: left;
-    font-weight: 400;
-    color: #1e1e1e;
-    line-height: 25px;
+.first_style:hover .orange_basket,
+.beauty_style:hover .orange_basket
+{
+    background: #c59a77;
 }
-.the_activator_info_first, .the_activator_info_second, .the_activator_info_third {
+
+.first_style:hover .orange_picture,
+.beauty_style:hover .orange_picture
+{
+    background: url("../images/white_basket.png") no-repeat;
+    background-position: center center;
+}
+/*end hover block*/
+
+/*main description about product*/
+.info_cloud {
     width: 138px;
     min-height: 61px;
     margin-top: 31px;
@@ -618,25 +656,14 @@ article img {
     color: #1e1e1e;
     line-height: 25px;
 }
+/*end main description about product*/
 
-.touch_styler_first, .touch_styler_second, .touch_styler_third, .mask_beauty {
-    line-height: 12px;
-    font-size: 12px;
-    font-family: ProximaNovaBold;
-    height: 41px;
-    width: 118px;
-    color: #a1a1a1;
-    margin-top: 102px;
-    display: block;
-    position:absolute;
-    margin-left: 40px;
-}
-
-.shampoo_first, .shampoo_second, .shampoo_third {
+.description_part
+{
     line-height: 15px;
     font-size: 12px;
     font-family: ProximaNovaBold;
-    height: 43px;
+    height: 58px;
     width: 126px;
     color: #a1a1a1;
     margin-top: 122px;
@@ -645,22 +672,7 @@ article img {
     margin-left: 40px;
 }
 
-.density_activator_first, .density_activator_second, .density_activator_third {
-    line-height: 15px;
-    font-size: 12px;
-    font-family: ProximaNovaBold;
-    height: 58px;
-    width: 119px;
-    color: #a1a1a1;
-    margin-top: 122px;
-    display: block;
-    position:absolute;
-    margin-left: 40px;
-}
-
-.price_beauty, .price_cloud_third, .price_cloud_second, .price_cloud_first,
-.price_shampoo_third, .price_shampoo_second, .price_shampoo_first,
-.price_density_third, .price_density_second, .price_density_first{
+.price{
     margin-top: 254px;
     position:absolute;
     margin-left: 40px;
@@ -673,9 +685,9 @@ article img {
 }
 
 /*blocks with orange basket*/
-.orange_basket_first, .orange_basket_second, .orange_basket_third,
-.orange_basket_shampoo_first, .orange_basket_shampoo_third
- {
+
+.orange_basket
+{
     display: block;
     width: 39px;
     height: 39px;
@@ -688,121 +700,92 @@ article img {
     box-shadow: 0px 3px 0px 0px #d6d6d6;
 }
 
-.white_basket_shampoo_second {
+.orange_basket a
+{
     display: block;
+    background: url("../images/orange_basket.png") no-repeat;
     width: 39px;
     height: 39px;
-    position: absolute;
-    -moz-border-radius:39px;
-    -webkit-border-radius:39px;
-    -khtml-border-radius:39px;
-    margin: 230px 0 0 350px;
-    background: #c59a77;
-    box-shadow: 0px 3px 0px 0px #d6d6d6;
+    background-position: center center;
 }
 
-.orange_basket_beauty_style {
-    display: block;
-    width: 39px;
-    height: 39px;
-    position: absolute;
-    -moz-border-radius:39px;
-    -webkit-border-radius:39px;
-    -khtml-border-radius:39px;
-    margin: 250px 0 0 350px;
-    background: #ffffff;
-    box-shadow: 0px 3px 0px 0px #d6d6d6;
-}
-
-.orange_basket_first:hover, .orange_basket_second:hover, .orange_basket_third:hover,
-.orange_basket_beauty_style:hover, .orange_basket_shampoo_first:hover, .white_basket_shampoo_second:hover,
-.orange_basket_shampoo_third:hover{
-    cursor:pointer;
-    opacity: 0.8;
-}
-
-.orange_basket_first a, .orange_basket_second a, .orange_basket_third a,
-.orange_basket_beauty_style a, .orange_basket_shampoo_first a, .orange_basket_shampoo_third a {
-    margin-top: 14px;
-    display: inline-block;
-    margin-left: 13px;
-}
-
-.white_basket_shampoo_second a {
-    margin-top: 12px;
-    display: inline-block;
-    margin-left: 13px;
-}
 /*end blocks with orange basket*/
 
 /*blocks with pictures*/
-.cloud_nine_picture_first {
-    width: 216px;
-    min-height: 144px;
+.cloud_nine_picture_first, .cloud_nine_picture_second, .cloud_nine_picture_third,
+.beauty_style_picture,
+.charge_up_picture_first, .shampoo_picture_second, .shampoo_picture_third,
+.activator_picture_first, .activator_picture_second, .activator_picture_third
+{
+    width: 250px;
+    min-height: 300px;
     position: absolute;
-    background: url('../images/cloud_nine_touch_first.png') no-repeat;
-    margin-top: 80px;
-    margin-left: 10px;
-}
-.cloud_nine_picture_second {
-    width: 71px;
-    min-height: 209px;
-    position: absolute;
-    background: url('../images/cloud_nine_second.png') no-repeat;
-    margin-top: 50px;
-    margin-left: 90px;
 }
 
-.cloud_nine_picture_third {
-    width: 190px;
-    min-height: 150px;
-    position: absolute;
-    background: url('../images/cloud_nine_third.png') no-repeat;
-    margin-top: 80px;
+.cloud_nine_picture_first
+{
+    background: url('../images/1.png') no-repeat;
+}
+
+.cloud_nine_picture_second
+{
+    background: url('../images/4.png') no-repeat;
+    margin-left: 50px;
+}
+
+.cloud_nine_picture_third
+{
+    background: url('../images/7.png') no-repeat;
     margin-left: 20px;
 }
 
-.beauty_style_picture {
-    width: 247px;
-    min-height: 178px;
-    position: absolute;
-    background: url('../images/beuty_style_picture.png') no-repeat;
-    margin-top: 90px;
-    margin-left: 20px;
+.beauty_style_picture
+{
+    background: url('../images/9.png') no-repeat;
 }
 
-.charge_up_picture_first {
-    width: 80px;
-    min-height: 213px;
-    position: absolute;
-    background: url('../images/kerastase_shampoo.png') no-repeat;
-    margin-top: 40px;
-    margin-left: 70px;
-}
-
-.shampoo_picture_second {
-    width: 234px;
-    min-height: 183px;
-    position: absolute;
-    background: url('../images/shampoo_second.png') no-repeat;
-    margin-top: 40px;
+.charge_up_picture_first
+{
+    background: url('../images/2.png') no-repeat;
     margin-left: 40px;
 }
 
-.shampoo_picture_third {
-    width: 235px;
-    min-height: 145px;
-    position: absolute;
-    background: url('../images/shampoo_third.png') no-repeat;
-    margin-top: 110px;
+.shampoo_picture_second
+{
+    background: url('../images/5.png') no-repeat;
+    margin-left: 15px;
+}
+
+.shampoo_picture_third
+{
+    background: url('../images/8.png') no-repeat;
+    margin-top: 20px;
+}
+
+.activator_picture_first
+{
+    background: url('../images/3.png') no-repeat;
+}
+
+.activator_picture_second
+{
+    background: url('../images/6.png') no-repeat;
+    margin-top: 20px;
+}
+
+.activator_picture_third
+{
+    background: url('../images/2.png') no-repeat;
     margin-left: 20px;
 }
+
 /*end blocks with pictures*/
 
 /*end central part of the site. Blocks with products*/
 
 /*blocks with professional cosmetics and online store before footer*/
 
+/*beauty style*/
 .block_with_professional_cosmetics {
     width: 1280px;
     display: flex;
@@ -818,11 +801,45 @@ article img {
 .beauty_style {
     width:33.3%;
 }
+/*end beauty style*/
 
-/* end blocks with professional cosmetics and online store before footer*/
 .online_store {
     background: url('../images/girl_from_online_store.png') no-repeat;
     background-size: cover;
     min-height: 300px;
     width: 66.7%;
 }
+
+.online_store_of_professional_cosmetics {
+    line-height: 25px;
+    font-size: 18px;
+    font-family: ProximaNovaBold;
+    height: 37px;
+    width: 326px;
+    color: #1e1e1e;
+    margin-top: 29px;
+    display: block;
+    position:absolute;
+    margin-left: 40px;
+    font-weight: 400;
+}
+
+.greetings {
+    margin-top: 77px;
+    color: #535151;
+    display: block;
+    position:absolute;
+    margin-left: 40px;
+    font-weight: 400;
+    height: 135px;
+    width: 313px;
+    line-height: 15px;
+    font-size: 14px;
+    font-family: ProximaNovaBold;
+}
+
+.empty {
+    min-height: 4px;
+}
+
+/* end blocks with professional cosmetics and online store before footer*/
