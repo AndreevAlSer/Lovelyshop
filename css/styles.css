@@ -525,14 +525,6 @@ article img {
     border: 1px solid #b48c6a;
 }
 
-.view_cosmetics_3 a {
-    display: block;
-    background: url("../images/arrow_middle.png") no-repeat;
-    width: 39px;
-    height: 39px;
-    background-position: center center;
-}
-
 .view_cosmetics_1 a, .view_cosmetics_2 a, .view_cosmetics_3 a
 {
     display: block;
@@ -843,3 +835,169 @@ article img {
 }
 
 /* end blocks with professional cosmetics and online store before footer*/
+.fix {
+    height: 211px;
+    clear: both;
+}
+/*footer*/
+footer {
+    width:1280px;
+    min-height: 300px;
+    background: #1e1e1e;
+    margin: -211px auto;
+    position: relative;
+}
+
+.footer-inner {
+    width: 1280px;
+    position: absolute;
+    min-height: 175px;
+    margin: 31px auto;
+}
+
+.online_store_block {
+    position: absolute;
+    color: #8e8e8e;
+    line-height: 17px;
+    font-size: 12px;
+    font-family: ProximaNovaBold;
+    width: 135px;
+    min-height: 90px;
+    display: block;
+    font-weight: 400;
+    text-align: left;
+    margin:0;
+    margin-left: 34px;
+
+}
+
+/*footer main menu*/
+
+.footer_menu {
+    position: relative;
+    min-height: 165px;
+    margin-top: 0;
+    width: 1100px;
+    margin-left: 175px;
+}
+
+.footer_menu ul {
+    float: left;
+    margin-right: 72px;
+    margin-top: 0;
+}
+
+.footer_menu ul li {
+    list-style: none;
+    line-height: 25px;
+    color: #8e8e8e;
+}
+
+.footer_menu ul li:first-child {
+    color: #ffffff;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-family: ProximaNovaBold;
+}
+
+.footer_menu ul li a {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.certificate {
+    text-align: left;
+    display: block;
+    width: 80px;
+    height: 28px;
+    line-height: 13px;
+    margin-top: 20px;
+}
+
+.footer_menu ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-logo {
+    background: url(../images/CupoNation.png) 0 0 no-repeat;
+    height: 31px;
+    width: 104px;
+    display: block;
+    margin-top: 8px;
+}
+
+/*end footer main menu*/
+
+.social_network {
+    width: 140px;
+    height: 40px;
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 70px;
+    margin-top: -8px;
+}
+
+.networks_instagram, .networks_vk, .networks_facebook {
+    border: 1px solid #c59a77; /* Рамка вокруг текста */
+    position: relative;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    -khtml-border-radius:39px;
+    background: #333333;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    width: 39px;
+    height: 39px;
+}
+
+.networks_instagram a
+{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background: url("../images/Instagram.png") no-repeat;
+    background-position: center center;
+}
+
+.networks_vk a {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background: url("../images/Vk.png") no-repeat;
+    background-position: center center;
+}
+
+.networks_facebook a {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background: url("../images/facebook.png") no-repeat;
+    background-position: center center;
+}
+
+.networks_instagram:hover, .networks_vk:hover, .networks_facebook:hover {
+    background: #c59a77;
+}
+
+.networks_instagram:hover .instagram_picture
+{
+    background: url("../images/Instagram.png") no-repeat;
+    background-position: center center;
+}
+
+.networks_vk:hover .vk_picture
+{
+    background: url("../images/Vk.png") no-repeat;
+    background-position: center center;
+}
+
+.networks_vk:hover .facebook_picture
+{
+    background: url("../images/facebook.png") no-repeat;
+    background-position: center center;
+}
+
+/*end footer*/
