@@ -5,6 +5,10 @@
     <title>Latyshops</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick-theme.css"/>
+
 </head>
 <body>
     <div class="page-wrapper">
@@ -65,56 +69,54 @@
         <main>
             <!-- slider -->
 
-            <article class="slider">
+                 <article class="slider">
 
-                <!-- Slider Setup -->
-                <input checked type=radio name=slider id=slide1 />
-                <input type=radio name=slider id=slide2 />
+                     <input checked type=radio name=slider id=slide1 />
+                     <input type=radio name=slider id=slide2 />
 
-                          <!-- The Slider -->
-                <div id=slides>
-                    <div id=overflow>
-                        <div class="inner">
-                            <a href="#"><div class="kerastase"></div></a>
-                            <div class="slider_line"></div>
-                            <p class="info">
-                                Подарите новую жизнь
-                                Вашим волосам
-                            </p>
-                            <a href="#" class="more_info_button">ПОДРОБНЕЕ</a>
-                            <div class="kerastase-images"></div>
-                                <article>
-                                    <p class="info">
-                                        Подарите новую жизнь
-                                        Вашим волосам
-                                    </p>
-                                    <img src="images/First_girl.png" />
-                                </article>
-                                <article>
-                                    <img src="images/Second_girl.png" />
-                                </article>
-                        </div> <!-- .inner -->
-                    </div> <!-- #overflow -->
+                     <div id=slides>
+                         <div id=overflow>
+                             <div class="inner">
+                                 <a href="#"><div class="kerastase"></div></a>
+                                 <div class="slider_line"></div>
+                                 <p class="info">
+                                     Подарите новую жизнь
+                                     Вашим волосам
+                                 </p>
+                                 <a href="#" class="more_info_button">ПОДРОБНЕЕ</a>
+                                 <div class="kerastase-images"></div>
+                                     <article>
+                                         <p class="info">
+                                             Подарите новую жизнь
+                                             Вашим волосам
+                                         </p>
+                                         <img src="images/First_girl.png" />
+                                     </article>
+                                     <article>
+                                         <img src="images/Second_girl.png" />
+                                     </article>
+                             </div> <!-- .inner -->
+                   </div> <!-- #overflow -->
                 </div> <!-- #slides -->
 
                 <!-- Controls and Active Slide Display -->
 
-                  <div id=controls>
-                      <label for=slide1></label>
-                      <label for=slide2></label>
-                  </div>
+                     <div id=controls>
+                         <label for=slide1></label>
+                         <label for=slide2></label>
+                     </div>
 
-                <!-- #controls -->
+                   <!-- #controls -->
 
                 <!--active-->
-                <div id=active>
-                    <label for=slide1></label>
-                    <label for=slide2></label>
-                </div>
-                <!--  end active -->
+                    <div id=active>
+                        <label for=slide1></label>
+                        <label for=slide2></label>
+                    </div>
+                    <!--  end active -->
 
-            </article>
-            <!-- end slider -->
+            <       </article>
+                   <!-- end slider -->
 
             <!-- products under the slider-->
 
@@ -367,26 +369,35 @@
                         <a href="javascript:void(0);" class="orange_picture"></a>
                     </div>
                 </div>
+
+
                 <div class="online_store">
-                    <div class="online_store_of_professional_cosmetics">
-                        ИНТЕРНЕТ-МАГАЗИН
-                        ПРОФЕССИОНАЛЬНОЙ КОСМЕТИКИ
-                    </div>
-                    <div class="greetings">
-                        <p>
-                            Дорогой посетитель, мы рады пригласить
-                            Вас в прекрасный мир высококачественной
-                            и профессиональной косметики!
+                    <div class="slide">
+                        <div class="online_store_of_professional_cosmetics">
+                            ИНТЕРНЕТ-МАГАЗИН
+                            ПРОФЕССИОНАЛЬНОЙ КОСМЕТИКИ
+                        </div>
+                        <div class="greetings">
+                            <p>
+                                Дорогой посетитель, мы рады пригласить
+                                Вас в прекрасный мир высококачественной
+                                и профессиональной косметики!
                             <p class="empty"></p>
-                        </p>
-                        <p>
-                            На просторах нашего магазина Вас ждет
-                            обширный выбор продукции для лица, тела,
-                            рук, ногтей, волос, различные эксклюзивные
-                            обертывания.
-                        </p>
+                            </p>
+                            <p>
+                                На просторах нашего магазина Вас ждет
+                                обширный выбор продукции для лица, тела,
+                                рук, ногтей, волос, различные эксклюзивные
+                                обертывания.
+                            </p>
+                        </div>
+                        <img src="images/First_girl_1.png" alt="" class="img-responsive" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/girl_2_from_online_store.png" alt="" class="img-responsive" />
                     </div>
                 </div>
+
                 <div class="clear"></div>
             </div>
             <div class="fix"></div>
@@ -458,5 +469,10 @@
         </footer>
         <!-- footer end -->
     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slickSlider.js"></script>
 </body>
 </html>

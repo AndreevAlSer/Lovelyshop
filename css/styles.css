@@ -795,11 +795,17 @@ article img {
 }
 /*end beauty style*/
 
-.online_store {
-    background: url('../images/girl_from_online_store.png') no-repeat;
+.online_store{
     background-size: cover;
     min-height: 300px;
     width: 66.7%;
+    margin: 0 auto;
+}
+
+.online_store img
+{
+    display: block;margin:auto;
+    background-size: cover;
 }
 
 .online_store_of_professional_cosmetics {
@@ -811,16 +817,16 @@ article img {
     color: #1e1e1e;
     margin-top: 29px;
     display: block;
-    position:absolute;
-    margin-left: 40px;
+    position:fixed;
     font-weight: 400;
+    margin-left: 40px;
 }
 
 .greetings {
     margin-top: 77px;
     color: #535151;
     display: block;
-    position:absolute;
+    position:fixed;
     margin-left: 40px;
     font-weight: 400;
     height: 135px;
@@ -832,6 +838,7 @@ article img {
 
 .empty {
     min-height: 4px;
+    position: fixed;
 }
 
 /* end blocks with professional cosmetics and online store before footer*/
